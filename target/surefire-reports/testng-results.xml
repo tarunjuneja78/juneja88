@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="83117" started-at="2018-08-11T19:38:12Z" finished-at="2018-08-11T19:39:35Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="83117" started-at="2018-08-11T19:38:12Z" finished-at="2018-08-11T19:39:35Z">
+      <class name="com.moneycontrol.TestCases.TestCase_MoneyControl">
+        <test-method status="PASS" signature="websiteLogin()[pri:1, instance:com.moneycontrol.TestCases.TestCase_MoneyControl@159c4b8]" name="websiteLogin" duration-ms="49971" started-at="2018-08-12T01:08:12Z" finished-at="2018-08-12T01:09:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- websiteLogin -->
+        <test-method status="PASS" signature="getStockMyWatchList()[pri:2, instance:com.moneycontrol.TestCases.TestCase_MoneyControl@159c4b8]" name="getStockMyWatchList" duration-ms="25593" started-at="2018-08-12T01:09:02Z" finished-at="2018-08-12T01:09:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStockMyWatchList -->
+        <test-method status="PASS" signature="writingInToExcel()[pri:3, instance:com.moneycontrol.TestCases.TestCase_MoneyControl@159c4b8]" name="writingInToExcel" duration-ms="7457" started-at="2018-08-12T01:09:27Z" finished-at="2018-08-12T01:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writingInToExcel -->
+      </class> <!-- com.moneycontrol.TestCases.TestCase_MoneyControl -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

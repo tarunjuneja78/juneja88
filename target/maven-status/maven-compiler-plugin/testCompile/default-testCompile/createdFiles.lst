@@ -1,0 +1,5 @@
+com\moneycontrol\RoughWork\Login.class
+com\moneycontrol\TestCases\TestCase_MoneyControl.class
+com\moneycontrol\MPage\MasterPage.class
+com\moneycontrol\Pages\CheckWatchList.class
+com\moneycontrol\Pages\LoginPage.class
