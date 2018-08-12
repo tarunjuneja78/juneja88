@@ -33,6 +33,7 @@ public class CheckWatchList {
 		
 			MasterPage.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			Actions act = new Actions(MasterPage.driver);
+			
 			WebElement Menu = MasterPage.driver.findElement(By.cssSelector(MasterPage.prop.getProperty("menu_menu")));
 			WebElement WatchList = MasterPage.driver.findElement(By.xpath(MasterPage.prop.getProperty("menu_watchlist")));
 			act.moveToElement(Menu).click().build().perform();
