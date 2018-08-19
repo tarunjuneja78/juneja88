@@ -23,6 +23,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
+import org.testng.annotations.Test;
 
 
 public class Login {
@@ -38,7 +39,7 @@ public class Login {
 	JavascriptExecutor js ;
 	
 	
-	//@Test(priority=0)
+	@Test(priority=0)
 	public void siteLogin()
 	{
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\JUNEJA\\eclipse-workspace\\ZERODHA\\src\\test\\java\\com\\moneycontrol\\Driver\\chromedriver.exe");
@@ -49,12 +50,10 @@ public class Login {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		List<WebElement> allFrames = driver.findElements(By.tagName("iframe"));
 		System.out.println("The size of all frames is "+allFrames.size());
-		for(int i=0;i<allFrames.size();i++)
-		{
-			driver.switchTo().frame(i);
-			if (driver.findElements(By.xpath("//*[@id='email'][@class='textfield'][@type='text'][@form-name='register_form']")).size()==1)
-			{
-				System.out.println("FRAME FOUND IS"+ i);
+		
+			driver.switchTo().frame("login_frame");
+			
+				
 				/*wait= new WebDriverWait(driver,5);
 				wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("//input[@id='email'][@form-name='login_form']"))));*/
 				
@@ -63,12 +62,9 @@ public class Login {
 				driver.findElement(By.xpath("//input[@id='pwd'][@form-name='login_form']")).click();
 				driver.findElement(By.xpath("//input[@id='pwd'][@form-name='login_form']")).sendKeys("Password_1234");
 				driver.findElement(By.xpath("//button[text()='Login']")).click();
-				break;
-				}
-			driver.switchTo().defaultContent();
-			
-			System.out.println("FRAME IS"+ i);
-		}
+				
+				
+		
 		
 }
 	
